@@ -6,10 +6,21 @@ Implemented in rust with rocket
 
 ## endpoints
 * /register/receiver_id/tracker_id (post)
-* /trackers/tracker_id (get)
-
 
 registers that a specific device has been seen by a transceiver station, both the device and the station must exist.
+
+* /trackers/tracker_id (get)
+
+Gets info about a specified tracker 
+
+* /unregister/receiver_id/tracker_id (post)
+
+Unregisters a specific tracke from a specific receiver
+
+* /videos/<display_id> (get)
+
+Gets the most relevant video for a specific display
+
 
 # build
 * switch to nightly "rustup override set nightly"
