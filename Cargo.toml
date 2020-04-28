@@ -1,6 +1,6 @@
 [package]
 name = "proj17_iot-server"
-version = "0.0.0"
+version = "1.0.0"
 publish = false
 edition = "2018"
 
@@ -10,14 +10,14 @@ edition = "2018"
 rocket_contrib = "0.4.4"
 rocket = "0.4.2"
 futures = "0.3.4"
-mysql = "18.2.0"
+mysql = "15.1.0"
 time = "=0.2.7"
 mysql_common = "*"
 lazy_static = "1.4.0"
 colour = "*"
 reduce = "*"
 exitcode = "1.1.2"
-serde = "1.0.94"
+serde = { version="1.0.94", features = ["derive"]}
 serde_derive = "1.0.94"
 serde_json = "1.0.40"
 
